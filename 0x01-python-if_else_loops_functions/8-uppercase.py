@@ -2,7 +2,7 @@
 def uppercase(str):
     result = ""
     for char in str:
-        if i <= 96 or i >= 123:
+        if ord(char) <= 96 or ord(char) >= 123:
             result += char
         else:
             result += char
