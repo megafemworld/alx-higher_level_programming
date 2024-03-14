@@ -6,7 +6,10 @@ if __name__ == "__main__":
     if num_arg < 1:
         print("{} arguments.".format(num_arg))
     else:
-        print("{} arguments:".format(num_arg))
+        if num_arg > 1:
+            print("{} arguments:".format(num_arg))
+        else:
+            print("{} argument:".format(num_arg))
         for arg in sys.argv[1:]:
             print("{}: {}".format(i, arg))
             i += 1
