@@ -8,5 +8,7 @@ def safe_print_list_integers(my_list=[], x=0):
                 counter += 1
             else:
                 continue
+        print()
     except Exception as e:
+        print()
         return counter
