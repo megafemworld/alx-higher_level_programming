@@ -5,10 +5,10 @@ def safe_print_list(my_list=[], x=0):
             for i in range(x):
                 print("{}".format(my_list[i]), end="")
             print("\n")
-            return i
+            return x
         except IndexError:
             counter = 0
-            for i in mylist:
+            for i in my_list:
                 print("{}".format(i), end="")
                 counter += 1
             print("\n")
