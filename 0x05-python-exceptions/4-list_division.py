@@ -11,9 +11,8 @@ def list_division(my_list_1, my_list_2, list_length):
                 print("wrong type")
             else:
                 div_list.append(my_list_1[i]/my_list_2[i])
-        return div_list
     except Exception as e:
         div_list.append(0)
         print("out of range")
     finally:
-        print("{}".format(div_list))
+        return div_list
