@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-'''0-square.py: Python script that creates a Square Class'''
+# 0-square.py by Femi
+"""Defines a square """
+
+
 class Square:
-    '''Creates an empty Square type'''
+    """Does nothing"""
     pass
