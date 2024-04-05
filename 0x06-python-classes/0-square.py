@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-# 0-square.py by Femi
-"""Defines a square """
+"""Square class defination"""
 
 
 class Square:
-    """Does nothing"""
+    """Square class body"""
     pass
