@@ -5,4 +5,3 @@ class Square:
     This class defines a square with no methods or attributes.
     """
     pass
-
