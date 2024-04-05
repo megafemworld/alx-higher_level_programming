@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" defines a square """
-
+""" Square class defination """
 
 class Square:
-    """Empty Class"""
-    pass
+    """ private Size attribute defination """
+    def __init__(self, size):
+        self.__size = size
