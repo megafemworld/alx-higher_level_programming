@@ -8,13 +8,16 @@ class Square:
         When Size is less than 0 show ValueError
     """
     def __init__(self, size=0):
+        """Initialize a new square"""
         self.size = size
 
     @property
     def size(self):
+        """Retrieve size."""
         return self.__size
 
     @size.setter
+    """Set size."""
     def x(self, value):
         if type(value) is not int:
             raise TypeError("size must be an integer")
@@ -24,5 +27,6 @@ class Square:
             self.__size = value
 
     def area(self):
+        """Return the area of the square."""
         area = self.__size * self.__size
         return area
