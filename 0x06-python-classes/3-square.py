@@ -8,7 +8,6 @@ class Square:
         When Size is less than 0 show ValueError
     """
     def __init__(self, size=0):
-        """Initilizae size, check the type and Value"""
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
