@@ -8,7 +8,7 @@ class Square:
         When Size is less than 0 show ValueError
     """
     def __init__(self, size=0):
-        self.value = size
+        self.__size = size
 
     @property
     def size(self):
