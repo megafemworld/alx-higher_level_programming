@@ -8,12 +8,15 @@ class Square:
         When Size is less than 0 show ValueError
     """
     def __init__(self, size=0):
-        self.__size = size
-        if type(self.__size) is not int:
+        """Initilizae size and change type and Value"""
+        if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
+        else:
+            return self.__size = size
     def area(self):
-        """Calculate and return the square if the size"""
-        area = __self.size*__self.size
-        return area
+        """Calculate and return the square of the size"""
+        if self.__size:
+            area = self.__size*__self.size
+            return area
