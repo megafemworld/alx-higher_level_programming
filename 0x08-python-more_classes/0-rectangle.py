@@ -4,5 +4,7 @@
 
 
 class Rectange:
-    """Body of the class"""
+    """Body of the class
+
+    """
     pass
