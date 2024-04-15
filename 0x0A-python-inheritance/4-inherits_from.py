@@ -21,8 +21,6 @@ Args:
 obj - Object to check
 a_class - class that want to check through
 """
-    if issubclass(obj, a_class) and type(obj) != a_class:
-        return True
     if isinstance(obj, a_class) and type(obj) != a_class:
         return True
     else:
