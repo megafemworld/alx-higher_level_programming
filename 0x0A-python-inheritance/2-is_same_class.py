@@ -21,7 +21,7 @@ Args:
 obj - Object to check
 a_class - class that want to check through
 """
-    if isinstance(obj, a_class):
+    if type(obj) is a_class:
         return True
     else:
         return False
