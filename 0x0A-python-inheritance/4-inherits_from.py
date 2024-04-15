@@ -11,7 +11,7 @@ a_class - class that want to check through
 
 
 def inherits_from(obj, a_class):
-    """ is_same_class function
+    """ inherits_from function
 ==================================
 How to use inherits_from function
 =================================
