@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""is_same_class.
-a function that returns True if the object is
-exactly an instance of the specified class. Otherwise False
-agurment:
-obj: The object you want to check
-a_class: the class you want to check
+"""
+==================================
+How to use is_same_class function
+=================================
+return True if object found
+Otherwise False
+obj - Object to check
+a_class - class that want to check through
 """
 
 
