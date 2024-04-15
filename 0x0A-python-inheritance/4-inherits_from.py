@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 
 """
-File: 4-inherits_from.py
+File: 4-inherits.py
 Desc: This file contains a single function defination.
-Author: Gizachew Bayness (Elec Crazy).
-Date Created: Aug 1 2022
 """
 
 
