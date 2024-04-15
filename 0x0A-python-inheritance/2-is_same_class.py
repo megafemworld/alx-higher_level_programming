@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+""" is_same_class function
 ==================================
 How to use is_same_class function
 =================================
