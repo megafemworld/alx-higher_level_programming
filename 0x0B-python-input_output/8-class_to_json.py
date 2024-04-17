@@ -1,5 +1,5 @@
 """
-#8-class_to_json.py defination
+8-class_to_json.py module
 """
 
 
