@@ -4,6 +4,7 @@
 Desc: This module deals with both json and writing files.
 =========================================================
 """
+import json
 
 
 def save_to_json_file(my_obj, filename):
@@ -14,6 +15,5 @@ def save_to_json_file(my_obj, filename):
         filename: Name of json file to save into.
         my_obj: The object to serialize.
     """
-    import json
     with open(filename, "w", encoding="utf8") as my_file:
         my_file.write(dumps(my_obj))
