@@ -1,4 +1,6 @@
-""" #8-class_to_json.py defination """
+"""
+#8-class_to_json.py defination
+"""
 
 
 def class_to_json(obj):
