@@ -17,4 +17,4 @@ def class_to_json(obj):
               that can be serialized to JSON.
     """
 
-    return dir(obj)
+    return (obj.__dict__)
