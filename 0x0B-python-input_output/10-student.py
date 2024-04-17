@@ -18,6 +18,9 @@ class Student():
         """
         This function retrieves a dictionary representation
         of a Student instance
+        Args:
+            self: the class instance
+            attrs: list of attributes to pass
         """
 
         if type(attrs) == list and all(type(i) == str for i in attrs):
