@@ -19,10 +19,12 @@ class Student():
         This function retrieves a dictionary representation
         of a Student instance
         """
-        if attrs is None:
-            return (self.__dict__)
-        elif attrs is list:
+
+        if isinstance(attrs, list) and
+        all(isinstance(attr, str) for attr in attrs):
+            result_dict = {}
             for attr in attrs:
-                if isinstance(attr, str) and hasattr(self, attr):
+                if hasattr(self, attr):
                     result_dict[attr] = getattr(self, attr)
             return (result_dict)
+        return (self.__dict__)
