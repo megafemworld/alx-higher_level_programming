@@ -21,7 +21,7 @@ class Student():
         """
         if attrs is None:
             return (self.__dict__)
-        else:
+        elif attrs is list:
             for attr in attrs:
                 if isinstance(attr, str) and hasattr(self, attr):
                     result_dict[attr] = getattr(self, attr)
