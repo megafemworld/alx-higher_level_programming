@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""Student defination
-Write a class Student that defines a student by: (based on 9-student.p
-"""
+"""Student defination"""
 
 
 class Student():
