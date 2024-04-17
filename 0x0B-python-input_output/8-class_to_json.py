@@ -12,7 +12,8 @@ def class_to_json(obj):
              including lists, dictionaries, strings, integers, and booleans.
 
     Returns:
-        dict: A dictionary representation of the object with simple data structures
+        dict: A dictionary representation of the object
+        with simple data structures
               that can be serialized to JSON.
     """
 
