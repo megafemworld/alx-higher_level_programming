@@ -23,6 +23,6 @@ class Student():
             return (self.__dict__)
         else:
             for attr in attrs:
-                if hasattr(self, attr):
+                if isinstance(attr, str) and hasattr(self, attr):
                     result_dict[attr] = getattr(self, attr)
             return (result_dict)
