@@ -20,10 +20,7 @@ class Student():
         of a Student instance
         """
 
-        if type(attrs, list) and all(type(attr, str) for attr in attrs):
-            result_dict = {}
-            for attr in attrs:
-                if hasattr(self, attr):
-                    result_dict[attr] = getattr(self, attr)
-            return (result_dict)
-        return (self.__dict__)
+        if type(attrs) == list and all(type(i) == str for i in attrs):
+            return ({key: getattr(self, key)
+                    for key in attrs if hasattr(self, key)})
+        return self.__dict__
