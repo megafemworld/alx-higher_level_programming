@@ -2,11 +2,16 @@
 
 
 def class_to_json(obj):
-    """ class_to_json
-    This function returns the dictionary description with
-    simple data structure (list, dictionary, string, integer
-    and boolean) for JSON serialization of an object
-    Arg:
-        obj - This is an instance of a class to return its json
     """
+    Serialize an object into a dictionary suitable for JSON serialization.
+
+    Args:
+        obj: An instance of a Class with attributes that are serializable,
+             including lists, dictionaries, strings, integers, and booleans.
+
+    Returns:
+        dict: A dictionary representation of the object with simple data structures
+              that can be serialized to JSON.
+    """
+
     return (obj.__dict__)
