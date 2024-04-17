@@ -20,8 +20,7 @@ class Student():
         of a Student instance
         """
 
-        if isinstance(attrs, list) and
-        all(isinstance(attr, str) for attr in attrs):
+        if type(attrs, list) and all(type(attr, str) for attr in attrs):
             result_dict = {}
             for attr in attrs:
                 if hasattr(self, attr):
