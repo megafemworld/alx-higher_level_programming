@@ -114,7 +114,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """ Update attributes """
-        if args:
+        if len(args) != 0 and args:
             if len(args) > 0:
                 self.__id = args[0]
             if len(args) > 1:
