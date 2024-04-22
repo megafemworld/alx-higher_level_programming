@@ -4,16 +4,20 @@
 
 def matrix_divided(matrix, div):
     div_list = []
+    errtype = "matrix must be a matrix (list of lists) of integers/floats"
     if type(matrix) is not list:
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise
+        TypeError(errtype)
     for i in range(len(matrix)):
         if type(matrix[i]) is not list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise
+            TypeError(errtype)
         for j in matrix[i]:
             if type(j) is not int and type(j) is not float:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise
+                TypeError(errtype)
     for c in matrix:
-        if len((matrix[0])) > (len(c)) or len((matrix[0])) < (len(c)): 
+        if len((matrix[0])) > (len(c)) or len((matrix[0])) < (len(c)):
             raise TypeError("Each row of the matrix must have the same size")
     if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")
