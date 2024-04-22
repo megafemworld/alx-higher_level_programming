@@ -123,7 +123,7 @@ class Rectangle(Base):
                 self.__height = args[2]
             if len(args) >= 4:
                 self.__x = args[3]
-            if len(args) < 6:
+            if len(args) >= 5:
                 self.__y = args[4]
         elif kwargs:
             for key, value in kwargs.items():
