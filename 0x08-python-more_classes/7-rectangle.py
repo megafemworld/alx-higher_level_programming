@@ -57,7 +57,7 @@ class Rectangle:
             return display
         else:
             for i in range(self.__height):
-                display += (self.print_symbol * self.__width)
+                display += (str(self.print_symbol * self.__width))
                 if i is not self.__height - 1:
                     display += "\n"
         return (display)
