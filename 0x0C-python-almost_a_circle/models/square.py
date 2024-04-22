@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-from  models.rectangle import Rectangle
-
+from models.rectangle import Rectangle
 """ Sqaure class, its attributes and methods """
 
 
@@ -12,7 +11,7 @@ class Square(Rectangle):
 
     def __str__(self):
         return (f"[square] ({self.id}")
-    
+
     @property
     def size(self):
         """Retrieve size of sqaure"""
