@@ -72,30 +72,10 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """initilize of rectangle class instances"""
         super().__init__(id)
-        if type(width) is not int:
-            raise TypeError("width must be an integer")
-        elif width <= 0:
-            raise ValueError("height must be > 0")
-        else:
-            self.width = width
-        if type(height) is not int:
-            raise TypeError("height must be an integer")
-        elif height <= 0:
-            raise ValueError("height must be > 0")
-        else:
-            self.height = height
-        if type(x) is not int:
-            raise TypeError("x must an integer")
-        elif x < 0:
-            raise ValueError("x must be >= 0")
-        else:
-            self.x = x
-        if type(y) is not int:
-            raise TypeError("y must be an integer")
-        elif y < 0:
-            raise ValueError("y must be >= 0")
-        else:
-            self.y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     def area(self):
         """ Calculate and return area """
