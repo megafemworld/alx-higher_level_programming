@@ -83,9 +83,8 @@ class Rectangle(Base):
 
     def display(self):
         """ Visualize the rectangle """
-        print("\n", * self.__y, end="")
-        for x in range(self.__height):
-            print(" " * self.__x + "#" * self.__width)
+        for _ in range(self.height):
+            print("#" * self.width)
 
     def __str__(self):
         """ Rewrite __str__ """
