@@ -3,29 +3,18 @@
 
 
 def matrix_divided(matrix, div):
-    div_list = []
-    errtype = "matrix must be a matrix (list of lists) of integers/floats"
-    if type(matrix) is not list:
-        raise
-        TypeError(errtype)
-    for i in range(len(matrix)):
-        if type(matrix[i]) is not list:
-            raise
-            TypeError(errtype)
-        for j in matrix[i]:
-            if type(j) is not int and type(j) is not float:
-                raise
-                TypeError(errtype)
-    for c in matrix:
-        if len((matrix[0])) > (len(c)) or len((matrix[0])) < (len(c)):
+    """Function that divides all element of a matrix"""
+    errtype1 = "matrix must be a matrix (list of lists) of integers/floats"
+    if (not isinstance(matrix, list) or matrix == []
+            or not all(isinstance(row, list) for row in matrix)):
+        raise TypeError(errtype)
+    if not all(isinstance(num, (int, float)) for row in matrix for num in row):
+        raise TypeError(errtype1)
+        row_sizes = [lens(row) for row in matrix]
+        if not all(size == row_sizes[0] for size in row_sizes):
             raise TypeError("Each row of the matrix must have the same size")
-    if type(div) is not int and type(div) is not float:
-        raise TypeError("div must be a number")
-    elif div == 0:
-        raise ZeroDivisionError("division by zero")
-    for m in range(len(matrix)):
-        temp = []
-        for n in matrix[m]:
-            temp.append(round(n/div, 2))
-        div_list.append(temp)
-    return div_list
+        if not isinstance(div, (int, float)):
+            raise TypeError("div must be a number")
+        if div == 0:
+            raise TypeError("division by zero")
+        return [list(map(lambda x: round(x / div, 2), row)) for row in matrix]
