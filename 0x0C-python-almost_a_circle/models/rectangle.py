@@ -108,12 +108,12 @@ class Rectangle(Base):
             return
         for key in kwargs:
             if key == "id":
-                self.__id = kwargs["id"]
+                self.id = kwargs["id"]
             if key == "width":
-                self.__width = kwargs["width"]
+                self.width = kwargs["width"]
             if key == "height":
-                self.__height = kwargs["height"]
+                self.height = kwargs["height"]
             if key == "x":
-                self.__x = kwargs["x"]
+                self.x = kwargs["x"]
             if key == "y":
-                self.__y = kwargs["y"]
+                self.y = kwargs["y"]
