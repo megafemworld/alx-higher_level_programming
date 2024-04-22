@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from models.base import Base
+from base import Base
 """ Rectangle class Module"""
 
 
@@ -42,7 +42,7 @@ class Rectangle(Base):
     def x(self):
         """retrieve x"""
         return self.__x
-    
+
     @x.setter
     def x(self, x):
         """set the value of x"""
