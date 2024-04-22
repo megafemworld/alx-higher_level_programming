@@ -126,15 +126,14 @@ class Rectangle(Base):
             if len(args) > 4:
                 self.__y = args[4]
             return
-        elif kwargs:
-            for key, value in kwargs.items():
-                if key == "id":
-                    self.__id = value
-                if key == "width":
-                    self.__width = value
-                if key == "height":
-                    self.__height = value
-                if key == "x":
-                    self.__x = value
-                if key == "y":
-                    self.__y = value
+        for key, value in kwargs.items():
+            if key == "id":
+                self.__id = value
+            if key == "width":
+                self.__width = value
+            if key == "height":
+                self.__height = value
+            if key == "x":
+                self.__x = value
+            if key == "y":
+                self.__y = value
