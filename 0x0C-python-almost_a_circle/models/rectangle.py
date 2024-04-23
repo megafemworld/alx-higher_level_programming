@@ -119,6 +119,7 @@ class Rectangle(Base):
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
+        """return dictionary of selected attributtes"""
         return {"id": self.id,
                 "width": self.width,
                 "height": self.height,
