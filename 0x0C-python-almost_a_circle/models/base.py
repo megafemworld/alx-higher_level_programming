@@ -45,6 +45,6 @@ class Base():
             json_string: string representing a list of dictionaries
         """
         if json_string is None or json_string == "":
-            return "[]"
+            return []
         else:
             return json.loads(json_string)
