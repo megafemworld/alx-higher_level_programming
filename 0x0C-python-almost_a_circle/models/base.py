@@ -57,9 +57,9 @@ class Base():
             dictionary: double pointer to a dictionary
         """
         if cls.__name__ == "Rectangle":
-            dummy = cls(1, 1)
+            dummy = Rectangle(1, 1)
         elif cls.__name__ == "Square":
-            dummy = cls(1)
+            dummy = Square(1)
         else:
             dummy = None
 
