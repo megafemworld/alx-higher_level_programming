@@ -8,4 +8,3 @@ JOIN tv_genres ON tv_show_genres.genre_id = tv_genres.id
 JOIN tv_shows ON tv_show_genres.tv_show_id = tv_shows.id
 GROUP BY tv_genres.name
 ORDER BY number_of_shows DESC;
-
