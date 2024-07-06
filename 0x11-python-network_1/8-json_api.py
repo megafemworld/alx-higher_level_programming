@@ -5,14 +5,14 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    q = sys.argv[1] if len(sys.argv) > 1 else ""
+    q = "" if len(sys.argv) == 1 else sys.argv[1]
     load = {"q": q}
     try:
         r = requests.post("http://0.0.0.0:5000/search_user", data=load)
         resp_json = r.json()
-        if resp_json:
-            print(" [{}] {}".format(resp_json.get('id'), resp_json.get('name')))
+        if resp_json != {}:
+            print(" [{}] {}".format(resp_json.get("id"), resp_json.get("name")))
         else:
             print("No result")
-    except requests.exception.JSONDecodeError:
+    except ValueError:
         print("Not a valid JSON")
