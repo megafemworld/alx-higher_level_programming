@@ -11,7 +11,7 @@ if __name__ == "__main__":
         req = requests.get(url)
         req.raise_for_status()
 
-        print(response.text)
+        print(req.text)
 
-    except requests.exception.HTTPerror as e:
-        print("Error code: {}".format(e.req.status_code))
+    except requests.exceptions.HTTPError as e:
+        print("Error code: {}".format(e.response.status_code))
