@@ -9,7 +9,7 @@ if __name__ == "__main__":
     load = {"q": q}
     try:
         r = requests.post("http://0.0.0.0:5000/search_user", data=load)
-        resp_json = response.json()
+        resp_json = r.json()
         if resp_json:
             print(" [{}] {}".format(resp_json.get('id'), resp_json.get('name')))
         else:
