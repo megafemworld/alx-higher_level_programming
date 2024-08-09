@@ -2,5 +2,5 @@
 
 exports.addMeMaybe = function (number, theFunction) {
   number = number + 1;
-  return number;
+  theFunction(number);
 };
