@@ -14,5 +14,4 @@ if __name__ == "__main__":
             WHERE states.name = %s  ORDER BY cities.id ASC"
     c.execute(q, (argv[4],))
     cities = c.fetchall()
-    for city in cities:
-        print(city)
+    print(", ".join([city[0] for city in cities]))
